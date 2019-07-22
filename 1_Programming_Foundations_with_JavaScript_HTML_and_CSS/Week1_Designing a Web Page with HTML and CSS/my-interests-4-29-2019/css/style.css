@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+  color: #9999ff;
+}
+a {
+  font-size: 18px;
+}
+p {
+  font-family: verdana;
+  font-size: 18px;
+}
+
+#mainImg {
+  float:right;
+}
+
+li {
+  color:purple;
+}
+.fruitLi {
+  color:red;
+}
+
+table{
+  border-collapse: collapse;
+}
+table, th, td{
+  border: 1px solid black;
+}

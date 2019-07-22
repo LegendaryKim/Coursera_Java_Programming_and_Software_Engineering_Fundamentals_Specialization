@@ -1,0 +1,112 @@
+// steganography
+
+function clearbits(colorval) {
+    var x= Math.floor(colorval/16) * 16;
+    return x;
+}
+
+function crop(image, width, height) {
+    var ans = new SimpleImage(width, height);
+    for (var px of image.values()) {
+        var x = px.getX();
+        var y = px.getY();
+
+        if (x < width && y < height) {
+            var ansPixel = ans.getPixel(x,y);
+            ansPixel.setRed(px.getRed());
+            ansPixel.setGreen(px.getGreen());
+            ansPixel.setBlue(px.getBlue());
+        }
+    }
+    return ans;
+}
+
+function chop2hide(image) {
+    for (var px of image.values()) {
+        px.setRed(clearbits(px.getRed()));
+        px.setGreen(clearbits(px.getGreen()));
+        px.setBlue(clearbits(px.getBlue()));
+    }
+    return image;
+}
+
+function shift(image) {
+    for (var px of image.values()) {
+        px.setRed(px.getRed()/16);
+        px.setGreen(px.getGreen()/16);
+        px.setBlue(px.getBlue()/16);
+    }
+    return image;
+}    
+
+function newpv(p,q) {
+    if (p+q > 255) {
+        throw("values are too big");
+    } else {
+        return p + q;
+    }
+}
+
+function combine(show,hide) {
+    if (show.getWidth() != hide.getWidth() || show.getHeight() != hide.getHeight()) {
+        throw("Dimensions are not matched)")
+    } else {
+        var answer = new SimpleImage(show.getWidth(), show.getHeight());
+        for (var px of answer.values()) {
+            var x = px.getX();
+            var y = px.getY();
+            
+            var showPixel = show.getPixel(x,y);
+            var hidePixel = hide.getPixel(x,y);
+            
+            px.setRed(newpv(showPixel.getRed(), hidePixel.getRed()));
+            px.setGreen(newpv(showPixel.getGreen(), hidePixel.getGreen()));
+            px.setBlue(newpv(showPixel.getBlue(), hidePixel.getBlue()));
+        }
+        return answer;
+    }
+}
+
+function extract(image) {
+    var answer = new SimpleImage(image.getWidth(), image.getHeight());
+    for (var px of answer.values()) {
+        var x = px.getX();
+        var y = px.getY();
+        
+        var iamgePixel = image.getPixel(x,y);
+        
+        px.setRed(iamgePixel.getRed()%16 * 16);
+        px.setGreen(iamgePixel.getGreen()%16 * 16);
+        px.setBlue(iamgePixel.getBlue()%16 * 16);
+    }
+    return answer;
+}
+
+var hide = new SimpleImage("smalluniverse.jpg");
+// var start = new SimpleImage("usain.jpg");
+var start = new SimpleImage("skyline.jpg");
+
+var cropWidth = start.getWidth();
+if (hide.getWidth() < cropWidth) {
+	cropWidth = hide.getWidth();
+}
+var cropHeight = start.getHeight();
+if (hide.getHeight() < cropHeight) {
+	cropHeight = hide.getHeight();
+}
+
+print("cropped size: ", cropWidth, cropHeight);
+start = crop(start,cropWidth,cropHeight);
+hide = crop(hide,cropWidth,cropHeight);
+
+start = chop2hide(start);
+hide = shift(hide);
+print(start);
+print(hide);
+var ans = combine(start, hide);
+print(ans);
+var final = extract(ans);
+print(final);
+
+
+

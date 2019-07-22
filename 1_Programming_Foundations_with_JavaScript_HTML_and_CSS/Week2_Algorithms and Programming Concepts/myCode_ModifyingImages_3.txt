@@ -1,0 +1,18 @@
+function BluetoYello(image) {
+    for (var pixel of image.values()) {
+        var red = pixel.getRed();
+        var green = pixel.getGreen();
+        var blue = pixel.getBlue();
+        if (red < 255 & green < 255 & blue < 255) {
+            pixel.setRed(255);
+            pixel.setGreen(255);
+            pixel.setBlue(0);
+        }
+    }
+    return image;
+}
+
+var img = new SimpleImage("duke_blue_devil.png");
+print(img);
+print(BluetoYello(img));
+

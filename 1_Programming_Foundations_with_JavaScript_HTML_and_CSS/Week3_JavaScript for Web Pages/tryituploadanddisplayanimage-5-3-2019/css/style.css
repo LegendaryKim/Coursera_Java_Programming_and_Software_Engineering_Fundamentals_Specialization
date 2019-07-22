@@ -1,0 +1,17 @@
+h1 {
+  font-family: arial;
+  color: blue;
+}
+canvas {
+  height: 200px;
+  border: 1px solid lightgray;
+}
+
+body {
+  font-family: arial;
+  margin: 30px;
+}
+
+input {
+  font-size: 14pt;
+}

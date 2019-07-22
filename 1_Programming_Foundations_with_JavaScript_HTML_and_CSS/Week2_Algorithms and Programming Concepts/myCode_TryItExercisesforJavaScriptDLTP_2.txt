@@ -1,0 +1,17 @@
+var img = new SimpleImage(100,100);
+print(img)
+
+for (var pixel of img.values()) {
+    pixel.setRed(255)
+    pixel.setGreen(255)
+    pixel.setBlue(0)
+}
+print(img)
+
+//
+for (var pixel of img.values()) {
+    pixel.setRed(255)
+    pixel.setGreen(0)
+    pixel.setBlue(255)
+}
+print(img)

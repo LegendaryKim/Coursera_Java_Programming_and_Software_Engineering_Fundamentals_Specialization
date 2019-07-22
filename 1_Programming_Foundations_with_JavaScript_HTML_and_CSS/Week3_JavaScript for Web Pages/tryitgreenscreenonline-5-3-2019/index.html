@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>TryItGreenScreenOnline- 5/3/2019</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <script
+src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+</script>
+
+<h1>Green Screen Online</h1>
+
+<canvas id="can1">
+</canvas>
+<canvas id="can2">
+</canvas>
+
+<p>
+  Foreground Image: <input type="file" multiple="false" accept="image/*" id="Foreground" onchange="loadForegroundImage()">
+</p>
+<p>
+  Background Image: <input type="file" multiple="false" accept="image/*" id="Background" onchange="loadBackgroundImage()">
+</p>
+
+<p>
+  <input type="button" value="Create Composite" id="click1" onclick="doGreenScreen()">
+  <input type="button" value="Clean Canvases" id="click2" onclick="clearCanvas()">
+</p>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

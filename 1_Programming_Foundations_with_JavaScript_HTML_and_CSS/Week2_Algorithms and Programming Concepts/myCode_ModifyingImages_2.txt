@@ -1,0 +1,14 @@
+function swapRedGreen(image) {
+    for (var pixel of image.values()) {
+        var red = pixel.getRed();
+        var green = pixel.getGreen();
+        pixel.setGreen(red);
+        pixel.setRed(green);
+    }
+    return image;
+}
+
+var img = new SimpleImage("smallhands.png");
+print(img);
+print(swapRedGreen(img));
+

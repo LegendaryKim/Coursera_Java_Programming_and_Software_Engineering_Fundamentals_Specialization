@@ -1,0 +1,51 @@
+// write your code here
+var x = 3;
+var y = 4;
+var z = x + 2*y;
+print(x)
+print(y)
+print(z)
+//
+var x = 3;
+var y = 2;
+y = x;
+print(x);
+print(y);
+//
+var image = new SimpleImage("chapel.png")
+print(image)
+//
+print(image.getWidth())
+print(image.getHeight())
+print(image.getPixel(0,0))
+print(image.getRed(0,0), image.getGreen(0,0), image.getBlue(0,0))
+//
+function square(x) {
+    var ans = x * x;
+    return ans
+}
+var y = square(4);
+print(y);
+//
+function cube(x) {
+    var ans = x **3 ;
+    return ans
+}
+var y = cube(2);
+print(y);
+//
+function tripleadd(x, y, z) {
+    return x + y + z;
+}
+print(tripleadd(1,2,3));
+//
+function addstring(a, b) {
+    return a + b;
+}
+print(addstring("X", "Y"))
+//
+function width_height(image) {
+    print(image.getWidth())
+    print(image.getHeight())
+}
+width_height(image);
