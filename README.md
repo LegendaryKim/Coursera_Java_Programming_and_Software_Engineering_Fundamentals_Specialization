@@ -21,7 +21,7 @@ After completing this course, you will be able to:
 
 
 ### [2. Java Programming: Solving Problems with Software](https://github.com/LegendaryKim/Coursera_Java_Programming_and_Software_Engineering_Fundamentals_Specialization/tree/master/2_Java%20Programming%20Solving%20Problems%20with%20Software)
-Learn to code in Java and Improve your programming and problem-solving skills. You will learn to design algorithms as well as develop and debug programs. Using custom open-source classes, you will write programs that access and transform images, websites, and other types of data. [At the end of the course you will build a program that determines that popularity of different baby names in the US over time by analyzing comma sperated values (CVS) files.](https://github.com/LegendaryKim/Coursera_Java_Programming_and_Software_Engineering_Fundamentals_Specialization/tree/master/2_Java%20Programming%20Solving%20Problems%20with%20Software/Week4_MiniProject%20Baby%20Names/MiniProject) 
+Learn to code in Java and Improve your programming and problem-solving skills. You will learn to design algorithms as well as develop and debug programs. Using custom open-source classes, you will write programs that access and transform images, websites, and other types of data. [At the end of the course you will build a program that determines that popularity of different baby names in the US over time by analyzing comma separated values (CSV) files.](https://github.com/LegendaryKim/Coursera_Java_Programming_and_Software_Engineering_Fundamentals_Specialization/tree/master/2_Java%20Programming%20Solving%20Problems%20with%20Software/Week4_MiniProject%20Baby%20Names/MiniProject) 
 
 After completing this course you will be able to:
 1. Edit, compile, and run a Java program;
@@ -32,4 +32,5 @@ After completing this course you will be able to:
 6. Develop a set of test cases as part of developing a program;
 7. Create a class with multiple methods that work together to solve a problem; and
 8. Use divde-and-conquer design techniques for a program that uses multiple methods.
+
 
