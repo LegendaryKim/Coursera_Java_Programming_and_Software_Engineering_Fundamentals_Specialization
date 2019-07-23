@@ -33,4 +33,18 @@ After completing this course you will be able to:
 7. Create a class with multiple methods that work together to solve a problem; and
 8. Use divde-and-conquer design techniques for a program that uses multiple methods.
 
+### [3. Java Programming: Arrays, Lists, and Structured Data](https://github.com/LegendaryKim/Coursera_Java_Programming_and_Software_Engineering_Fundamentals_Specialization/tree/master/3_Java%20Programming%20Arrays%20Lists%20and%20Structured%20Data)
+Build on the software engineering skills you learned in "Java Programming: Solving Problems with Software" by learning new data structures. Use these data structures to build more complex programs that use Java's object-oriented features. [At the end of the course you will write an encryption program and a program to break your encryption algorithm.](https://github.com/LegendaryKim/Coursera_Java_Programming_and_Software_Engineering_Fundamentals_Specialization/tree/master/3_Java%20Programming%20Arrays%20Lists%20and%20Structured%20Data/Week4_Miniproject%20Vigenere%20Cipher/VigenereProgram)
+
+After completing this course, you will be able to:
+1. Read and write data from/to files;
+2. Solve problems involving data files;
+3. Perform quantitative analyses of data (e.g., finding maximums, minimums, averages);
+4. Store and manipulate data in an array or ArrayList;
+5. Combine multiple classes to solve larger problems;
+6. Use iteratbles and collections (including maps) in Java.
+
+
+
+
 
