@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=MapGladLib
+comment1.params=
+comment1.target=MapGladLib()
+comment10.params=source
+comment10.target=java.lang.String\ fromTemplate(java.lang.String)
+comment11.params=
+comment11.target=void\ makeStory()
+comment2.params=source
+comment2.target=MapGladLib(java.lang.String)
+comment3.params=source
+comment3.target=void\ initializeLabelSource(java.lang.String)
+comment4.params=
+comment4.target=void\ initializeFromSource()
+comment5.params=source
+comment5.target=java.util.ArrayList\ readIt(java.lang.String)
+comment6.params=source
+comment6.target=java.lang.String\ randomFrom(java.util.ArrayList)
+comment7.params=label
+comment7.target=java.lang.String\ getSubstitute(java.lang.String)
+comment8.params=w
+comment8.target=java.lang.String\ processWord(java.lang.String)
+comment9.params=s\ lineWidth
+comment9.target=void\ printOut(java.lang.String,\ int)
+numComments=12
