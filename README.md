@@ -42,7 +42,7 @@ After completing this course, you will be able to:
 3. Perform quantitative analyses of data (e.g., finding maximums, minimums, averages);
 4. Store and manipulate data in an array or ArrayList;
 5. Combine multiple classes to solve larger problems;
-6. Use iteratbles and collections (including maps) in Java.
+6. Use iterables and collections (including maps) in Java.
 
 
 
