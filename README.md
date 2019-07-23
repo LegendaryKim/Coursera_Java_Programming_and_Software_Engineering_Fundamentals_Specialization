@@ -60,6 +60,18 @@ After completing this course, you will be able to:
 10. Recognize standard Java classes and idioms including exception-handling, static methods, java.net, and java.io packages.
 
 
+### [5. Capstone Project - Java Programing: Build a Recommendation System](https://github.com/LegendaryKim/Coursera_Java_Programming_and_Software_Engineering_Fundamentals_Specialization/tree/master/5_Java%20Programming%20Build%20a%20Recommendation%20System)
+Even wonder how Netflix decides what movies to recommend for you? Or how Amazon recommends books? We can get a feel for how it works by building a simplified recommender of our own! In this capstone, you will show off your problem solving and Java programming skills by creating recommender systems. You will work with data for movies, including ratings, but the principles involved can easily be adapted to books, restaurants, and more. [you will write a program to answer questions about the data, including which items should be recommended to a user based on their ratings of several movies.](https://github.com/LegendaryKim/Coursera_Java_Programming_and_Software_Engineering_Fundamentals_Specialization/tree/master/5_Java%20Programming%20Build%20a%20Recommendation%20System/Week4_Weighted%20Averages/StepOneStarterProgram)
+
+Given input files on users ratings and movie titles, you will be able to:
+1. Read in and parse data into lists and maps;
+2. Calculate average ratings;
+3. Calculate how similar a given rater is to another user based on ratings; and
+4. Recommend movies to a given user based on ratings.
+5. Display recommended movies for a given user on a webpage.
+
+
+
 
 
 
