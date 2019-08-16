@@ -8,7 +8,7 @@ The Capstone Project - Hwanpyo's a Movie Recommender!!! : Click [Here](http://ww
 * keywords: Recommendation, Java, CSS, JavaScript, Filters, Interfaces, Database, Weighted Average
 
 ![Capstone Project1](/images/capstone1.png)
-![Capstone Project1](/images/capsotne2.png)
+![Capstone Project1](/images/capstone2.png)
 
 ## About This Specialization
 
