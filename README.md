@@ -3,8 +3,12 @@
 A Coursera specialization created by Duke University
 [https://www.coursera.org/specializations/java-programming](https://www.coursera.org/specializations/java-programming)
 
-The capstone project: [a Movie Recommendation System.](http://www.dukelearntoprogram.com/capstone/recommender.php?id=YC9SAhcnKwf7ur) 
-keywords: Recommendation, Java, CSS, JavaScript, Filters, Interfaces, Database, Weighted Average
+The Capstone Project - Hwanpyo's a Movie Recommender!!! : Click [Here](http://www.dukelearntoprogram.com/capstone/recommender.php?id=YC9SAhcnKwf7ur) 
+
+* keywords: Recommendation, Java, CSS, JavaScript, Filters, Interfaces, Database, Weighted Average
+
+![Capstone Project1](/images/capstone1.png)
+![Capstone Project1](/images/capsotne2.png)
 
 ## About This Specialization
 
@@ -72,7 +76,6 @@ Given input files on users ratings and movie titles, you will be able to:
 3. Calculate how similar a given rater is to another user based on ratings; and
 4. Recommend movies to a given user based on ratings.
 5. Display recommended movies for a given user on a webpage.
-
 
 
 
