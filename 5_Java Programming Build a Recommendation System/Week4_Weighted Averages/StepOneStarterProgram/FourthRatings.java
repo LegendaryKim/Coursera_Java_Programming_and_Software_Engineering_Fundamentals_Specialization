@@ -106,6 +106,7 @@ public class FourthRatings {
         return list;
     }
     
+    /*
     public ArrayList<Rating> getSimilarRatings(String id, int numSimilarRaters, int minimalRaters) {
         ArrayList<Rating> result = new ArrayList<Rating>();
         ArrayList<String> moviesID = MovieDatabase.filterBy(new TrueFilter());
@@ -140,8 +141,14 @@ public class FourthRatings {
         Collections.sort(result, Collections.reverseOrder());
         return result;
     }
+    */
+   
+   public ArrayList<Rating> getSimilarRatings(String id, int numSimilarRaters, int minimalRaters) {
+       return getSimilarRatingsByFilters(id, numSimilarRaters, minimalRaters, new TrueFilter());
+   }      
     
-public ArrayList<Rating> getSimilarRatingsByFilters(String id, int numSimilarRaters, int minimalRaters, Filter filterCriteria) {
+    
+   public ArrayList<Rating> getSimilarRatingsByFilters(String id, int numSimilarRaters, int minimalRaters, Filter filterCriteria) {
         ArrayList<Rating> result = new ArrayList<Rating>();
         ArrayList<String> moviesID = MovieDatabase.filterBy(filterCriteria);
         ArrayList<Rating> similarList = getSimilarities(id);

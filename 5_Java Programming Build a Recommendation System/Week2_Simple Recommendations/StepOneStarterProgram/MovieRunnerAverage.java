@@ -12,8 +12,8 @@ public class MovieRunnerAverage {
     private String ratersFilename;
     
     public MovieRunnerAverage() {
-        moviesFilename = "data/ratedmovies_short.csv";
-        ratersFilename = "data/ratings_short.csv";
+        moviesFilename = "data/ratedmoviesfull.csv";
+        ratersFilename = "data/ratings.csv";
     }
     
     public void printAverageRatings() {
@@ -24,7 +24,7 @@ public class MovieRunnerAverage {
         
         
         // print a list of movies and their average ratings
-        int minimalRaters = 3;
+        int minimalRaters = 12;
         ArrayList<Rating> aveRatings = sRatings.getAverageRatings(minimalRaters);
         Collections.sort(aveRatings);
         for (Rating rating: aveRatings) {
@@ -34,7 +34,7 @@ public class MovieRunnerAverage {
     
     public void getAverateRatingOneMovie() {
         SecondRatings sRatings = new SecondRatings(moviesFilename, ratersFilename);
-        String title = "The Godfather";
+        String title = "Vacation";
         int minimalRaters = 0;
         String id = sRatings.getID(title);
 

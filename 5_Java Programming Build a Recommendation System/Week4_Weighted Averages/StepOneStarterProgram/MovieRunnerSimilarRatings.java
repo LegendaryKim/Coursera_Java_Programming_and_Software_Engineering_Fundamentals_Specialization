@@ -77,7 +77,7 @@ public class MovieRunnerSimilarRatings {
         
         int minimalRaters = 5;
         int numSimilarRaters = 20;
-        String raterID = "65";              
+        String raterID = "71";              
         
         ArrayList<Rating> similarRatings = fRatings.getSimilarRatings(raterID, numSimilarRaters, minimalRaters);
         System.out.println("similarRatings size: " + similarRatings.size());
@@ -99,9 +99,9 @@ public class MovieRunnerSimilarRatings {
         // print a list of filtered movies and their average ratings 
         int minimalRaters = 5;
         int numSimilarRaters = 20;
-        String raterID = "65";
+        String raterID = "964";
         
-        String genre = "Action";        
+        String genre = "Mystery";        
         GenreFilter genreFilter = new GenreFilter(genre);      
         
         ArrayList<Rating> similarRatings = fRatings.getSimilarRatingsByFilters(raterID, numSimilarRaters, minimalRaters, genreFilter);
@@ -122,11 +122,11 @@ public class MovieRunnerSimilarRatings {
         System.out.println("number of raters: " + RaterDatabase.size());   
         
         // print a list of filtered movies and their average ratings 
-        int minimalRaters = 3;
+        int minimalRaters = 2;
         int numSimilarRaters = 10;
-        String raterID = "1034";
+        String raterID = "120";
         
-        String directrors = "Clint Eastwood,Sydney Pollack,David Cronenberg,Oliver Stone";
+        String directrors = "Clint Eastwood,J.J. Abrams,Alfred Hitchcock,Sydney Pollack,David Cronenberg,Oliver Stone,Mike Leigh";
         DirectorsFilter directorsFilter = new DirectorsFilter(directrors);     
         
         ArrayList<Rating> similarRatings = fRatings.getSimilarRatingsByFilters(raterID, numSimilarRaters, minimalRaters, directorsFilter);
@@ -147,15 +147,15 @@ public class MovieRunnerSimilarRatings {
         System.out.println("number of raters: " + RaterDatabase.size());   
         
         // print a list of filtered movies and their average ratings 
-        int minimalRaters = 5;
+        int minimalRaters = 3;
         int numSimilarRaters = 10;
-        String raterID = "65";
+        String raterID = "168";
         
-        String genre = "Adventure";        
+        String genre = "Drama";        
         GenreFilter genreFilter = new GenreFilter(genre);      
         
-        int minMinutes = 100;
-        int maxMinutes = 200;
+        int minMinutes = 80;
+        int maxMinutes = 160;
         MinutesFilter minutesFilter = new MinutesFilter(minMinutes, maxMinutes);  
         
         AllFilters allFilters = new AllFilters();
@@ -182,13 +182,13 @@ public void printSimilarRatingsByYearAfterAndMinutes() {
         // print a list of filtered movies and their average ratings 
         int minimalRaters = 5;
         int numSimilarRaters = 10;
-        String raterID = "65";
+        String raterID = "314";
         
-        int yearAfter = 2000;
+        int yearAfter = 1975;
         YearAfterFilter yearFilter = new YearAfterFilter(yearAfter);    
         
-        int minMinutes = 80;
-        int maxMinutes = 100;
+        int minMinutes = 70;
+        int maxMinutes = 200;
         MinutesFilter minutesFilter = new MinutesFilter(minMinutes, maxMinutes);  
         
         AllFilters allFilters = new AllFilters();
